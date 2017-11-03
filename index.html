@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<!--网页换肤-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/skin/skin_0.css" id="cssfile" />
+		<!--轮播图 banner -->
+        <script type="text/javascript" src="js/superslide.2.1.js"></script>
+        
+	</head>
+	<body>
+		<!--header start-->
+		<div id="header">
+			<a id="logo" href="#"><img src="images/logo.png"></a>
+			<ul id="skin">
+				<li id="skin_0" title="蓝色" class="selected">蓝色</li>
+				<li id="skin_1" title="紫色">紫色</li>
+				<li id="skin_2" title="红色">红色</li>		
+				<li id="skin_3" title="绿色">绿色</li>
+				<li id="skin_4" title="黑色">黑色</li>
+			</ul>
+		</div>
+		<!--header end-->
+		<!--nav start-->
+		<div class="nav_bg">
+			<div id="navigation">
+				<ul class="clearfix">
+					<li><a href="#">首页</a></li>
+					<li>
+						<a href="#">衬衫</a>
+						<ul class="clearfix">
+					    	<li><a href="#">短袖衬衫</a></li>
+					    	<li><a href="#">长袖衬衫</a></li>
+					    </ul>
+					</li>
+					<li>
+						<a href="#">卫衣</a>
+					    <ul class="clearfix">
+					    	<li><a href="#">开襟卫衣</a></li>
+					    	<li><a href="#">套头卫衣</a></li>
+					    </ul>
+					</li>
+					<li>
+						<a href="#">裤子</a>
+					    <ul class="clearfix">
+					    	<li><a href="#">休闲裤</a></li>
+					    	<li><a href="#"><!--免烫-->卡其裤</a></li>
+					    	<li><a href="#">牛仔裤</a></li>
+					    	<li><a href="#">短裤</a></li>
+					    </ul>
+					</li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+				<p>jane/男士</p>
+		    </div>
+		</div>
+		<!--nav end-->
+		<!--content start-->
+		<div id="content" class="clearfix">
+			<div class="content_left">
+				<div class="global_module news">
+					<h3>最新动态</h3>
+					<div class="scrollNews" >
+						<ul>
+							<li><a href="#" class="tooltip" title="甜美宽松毛衣今秋一定红.">甜美宽松毛衣今秋一定红.</a></li>
+							<li><a href="#" class="tooltip" title="秋装百搭小马甲不到50元.">秋装百搭小马甲不到50元.</a></li>
+							<li><a href="#" class="tooltip" title="修身韩版小西装万人疯抢.">修身韩版小西装万人疯抢.</a></li>
+							<li><a href="#" class="tooltip" title="夏末雪纺店主含泪大甩卖.">夏末雪纺店主含泪大甩卖.</a></li>
+						</ul>
+					</div>
+					<p class="module_up_down"><img src="images/toggle.jpg" alt="" /></p>
+				</div>
+		 		<div class="global_module procatalog">
+					<h3>产品分类</h3>
+					<ul class="m-treeview">
+						<li class="m-expanded">
+							<span>衬衫</span>
+							<ul>
+								<li><a href="#">短袖衬衫</a></li>
+								<li><a>长袖衬衫</a></li>	
+							</ul>
+							<p class="module"><img src="images/toggle.jpg" alt="" /></p>
+						</li>
+						<li class="m-expanded">
+							<span>卫衣</span>
+							<ul>
+								<li ><a>开襟卫衣</a></li>
+								<li ><a>套头卫衣</a></li>	
+							</ul>
+							<p class="module"><img src="images/toggle.jpg" alt="" /></p>
+						</li>
+						<li class="m-expanded">
+							<span>裤子</span>
+							<ul>
+								<li><a>休闲裤</a></li>
+								<li><a>免烫卡其裤</a></li>	
+								<li><a>牛仔裤</a></li>
+								<li><a>短裤</a></li>
+							</ul>
+							<p class="module"><img src="images/toggle.jpg" alt="" /></p>
+						</li>
+				    </ul>
+				    <p class="module_up_down"><img src="images/toggle.jpg" alt="" /></p>
+				</div>
+		    </div>
+			<div class="content_right">
+				<!--banner start-->
+				<div class="banner">
+					<div class="fullSlide">
+						<div class="bd">
+							<ul>
+								<li _src="url(images/banner01.jpg)" style="background:#E2025E center 0 no-repeat;"><a href="detail.html"></a></li>
+								<li _src="url(images/banner02.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a href="detail.html"></a></li>
+								<li _src="url(images/banner03.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="detail.html"></a></li>
+								<li _src="url(images/banner04.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="detail.html"></a></li>
+								<li _src="url(images/banner05.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="detail.html"></a></li>
+							</ul>
+						</div>
+						<div class="hd"><ul></ul></div>
+		           </div>
+			    </div>
+		        <script type="text/javascript">
+					$(".fullSlide").hover(function(){
+					    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+					},
+					function(){
+					    $(this).find(".prev,.next").fadeOut()
+					});
+					$(".fullSlide").slide({
+					    titCell: ".hd ul",
+					    mainCell: ".bd ul",
+					    effect: "fold",
+					    autoPlay: true,
+					    autoPage: true,
+					    trigger: "click",
+					    startFun: function(i) {
+					        var curLi = jQuery(".fullSlide .bd li").eq(i);
+					        if ( !! curLi.attr("_src")) {
+					            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+					        }
+					    }
+					});
+		        </script>
+                <!--banner end-->
+                <div class="new_style">
+                	<div class="new_style_title">
+                		<div>
+                			<h2>新款上市</h2>
+                		    <p><a href="#">查看更多</a></p>
+                		</div>
+                	</div>
+                	<div class="first">
+                		<div>
+                			<p>免烫高支棉衬衣</p>
+	                		<p>面料柔软、体贴好穿、手感柔滑</p>
+	                		<p>¥558</p>
+	                		<p><a href="detail.html">购买</a></p>
+                		</div>
+                	</div>
+                	<div class="sec">
+                		<ul class="clearfix">
+                			<li>
+                				<a href="detail.html"><img src="images/index_04.gif" /></a>
+                				<div class="introduction"> 
+                					<p>免烫高支棉衬衣</p>
+                					<p>¥432</p>
+	                		        <p><a href="#">购买</a></p>
+                				</div>
+                			</li>
+                			<li>
+                				<a href="detail.html"><img src="images/index_05.png" /></a>
+                				<div class="introduction"> 
+                					<div class="introduction"> 
+                					<p>免烫高支棉衬衣</p>
+                					<p>¥468</p>
+	                		        <p><a href="#">购买</a></p>
+                				</div>
+                				</div>
+                			</li>
+                		</ul>
+                	</div>
+                	<div class="thi">
+                		<!--start-->
+							<div class="fullSlide1">
+								<div class="bd">
+									<ul>
+										<li _src="url(images/index_06.png)" style="background:#E2025E center 0 no-repeat;"><a href="detail.html"></a></li>
+										<li _src="url(images/index_06.png)" style="background:#DED5A1 center 0 no-repeat;"><a href="detail.html"></a></li>
+									</ul>
+								</div>
+								<div class="hd"><ul></ul></div>
+				           </div>
+				        <script type="text/javascript">
+							$(".fullSlide1").hover(function(){
+							    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+							},
+							function(){
+							    $(this).find(".prev,.next").fadeOut()
+							});
+							$(".fullSlide1").slide({
+							    titCell: ".hd ul",
+							    mainCell: ".bd ul",
+							    effect: "fold",
+							    autoPlay: true,
+							    autoPage: true,
+							    trigger: "click",
+							    startFun: function(i) {
+							        var curLi = jQuery(".fullSlide1 .bd li").eq(i);
+							        if ( !! curLi.attr("_src")) {
+							            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+							        }
+							    }
+							});
+				        </script>
+                <!--banner end-->
+                	</div>
+                </div>  
+			</div>
+		</div>
+		<!--content end-->
+		<!--footer start-->
+		<div class="footer_bg">
+			<footer>
+				<ul class="clearfix class">
+					<li>
+						<span>部门</span>
+						<a href="#">女士</a>
+						<a href="#">男士</a>	
+						<a href="#">儿童</a>
+					    <a href="#">家居</a>
+					</li>
+					<li>
+						<span>公司信息</span>
+						<a href="#">在jane的职业发展</a>
+						<a href="#">关于jane集团</a>	
+						<a href="#">我们的职责</a>
+					    <a href="#">媒体</a>
+					    <a href="#">投资者关系</a>
+					    <a href="#">Corporate governance</a>
+					</li>
+					<li>
+						<span>帮助</span>
+						<a href="#">客户服务</a>
+						<a href="#">我的jane</a>	
+						<a href="#">jane门店信息</a>
+					    <a href="#">隐私一级法律条款</a>
+					    <a href="#">联系我们</a>
+					</li>
+					<li>
+						<span>订阅通讯</span>
+						<p>立即注册，获得85优惠</p>
+					    <a href="#">注册</a>
+					</li>
+				</ul>
+				<ul class="clearfix pic">
+					<li><a href="#"><img src="images/index_07.gif"/></a></li>
+					<li><a href="#"><img src="images/index_08.png"/></a></li>
+				</ul>
+				<p>jane的经营理念：以可持续的方式和优惠的价格提供时尚与品质。自从1947年成立以来，jane已成长为一家世界领 <br />先的时尚公司。先的时尚公司</p>
+				<p>京ICP备09046754  北京工商</p>
+				<p>jane  shopping</p>
+				<p>Change Country|¥</p>
+			</footer>
+		</div>
+		<!--footer end-->
+	</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+		<!--网页换肤-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/skin/skin_0.css" id="cssfile" />
+		<!--图片放大插件-->
+		<script src="js/jquery.jqzoom.js"></script>
+		<!--图片放大插件用户自定义配置-->
+		<script src="js/use_jqzoom.js"></script>
+		<!--选项卡标签-->
+		<script src="js/tab.js"></script>
+		<!--衣服尺寸的选择-->
+		<script src="js/sizeAndprice.js"></script>
+		<!--加入购物车后自动计算-->
+		<script src="js/finish.js"></script>
+		<!--左侧点击小图切换为大图-->
+		<script src="js/jquery.livequery.js"></script>
+		<script src="js/switchImg.js"></script>
+		<!--通过样式修改星级-->
+		<script src="js/star.js"></script>
+		<!--点击右侧按钮改变左  侧衣服颜色-->
+		<script src="js/switchColor.js"></script>
+		<!--点击看大图-->
+		<script src="js/jquery.thickbox.js"></script>
+		<!--放大镜样式同上面的js组合-->
+		<link type="text/css" rel="stylesheet" href="css/thickbox.css" />
+		
+		<!--轮播图 banner -->
+        <script type="text/javascript" src="js/superslide.2.1.js"></script>
+	</head>
+	<body>
+		<!--header start-->
+		<div id="header">
+			<a id="logo" href="#"><img src="images/logo.png"></a>
+			<ul id="skin">
+				<li id="skin_0" title="蓝色" class="selected">蓝色</li>
+				<li id="skin_1" title="紫色">紫色</li>
+				<li id="skin_2" title="红色">红色</li>		
+				<li id="skin_3" title="绿色">绿色</li>
+				<li id="skin_4" title="黑色">黑色</li>
+			</ul>
+		</div>
+		<!--header end-->
+		<!--nav start-->
+		<div class="nav_bg">
+			<div id="navigation">
+				<ul class="clearfix">
+					<li><a href="#">首页</a></li>
+					<li>
+						<a href="#">衬衫</a>
+						<ul class="clearfix">
+					    	<li><a href="#">短袖衬衫</a></li>
+					    	<li><a href="#">长袖衬衫</a></li>
+					    </ul>
+					</li>
+					<li>
+						<a href="#">卫衣</a>
+					    <ul class="clearfix">
+					    	<li><a href="#">开襟卫衣</a></li>
+					    	<li><a href="#">套头卫衣</a></li>
+					    </ul>
+					</li>
+					<li>
+						<a href="#">裤子</a>
+					    <ul class="clearfix">
+					    	<li><a href="#">休闲裤</a></li>
+					    	<li><a href="#"><!--免烫-->卡其裤</a></li>
+					    	<li><a href="#">牛仔裤</a></li>
+					    	<li><a href="#">短裤</a></li>
+					    </ul>
+					</li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+				<p>jane/男士</p>
+		    </div>
+		</div>
+		<!--nav end-->
+		
+		<!--content start-->
+		<div id="content" class="global_module">
+			<div class="pro_detail clearfix">
+				<div class="pro_detail_left">
+					<ul class="imgList">
+						<li><img src="images/pro_img-1/blue_one.jpg" alt="" /></li>
+						<li><img src="images/pro_img-1/blue_two.jpg" alt="" /></li>
+						<li><img src="images/pro_img-1/blue_three.jpg" alt="" /></li>
+					</ul>
+					<div class="jqzoom">
+                        <img src="images/pro_img-1/blue_one_small.jpg" alt="" name="bigImg" class="fs" id="bigImg"  jqimg="images/pro_img-1/blue_one_big.jpg"/>
+                    </div>
+                    <div class="clear"></div>
+					<span>
+		                <a href="images/pro_img-1/blue_one_big.jpg" id="thickImg" title="介绍文字" class="thickbox">
+		                   <img alt="点击看大图" src="images/look.gif" />
+		                </a>
+		            </span>
+				</div>
+				<div class="pro_detail_right">
+					<h4>免烫高支棉条纹衬衣</h4>
+					<p>¥200元  <del>300元</del></p>
+					<p><strong>编号：33313993</strong></p>
+					<div class="color_change">
+						颜色：<strong>蓝白</strong>
+						<ul>
+							<li><img src="images/pro_img-1/blue.jpg" alt="蓝白" /></li>
+							<li><img src="images/pro_img-1/yellow.jpg" alt="黄白" /></li>
+							<li><img src="images/pro_img-1/green.jpg" alt="粉绿" /></li>
+						</ul>
+					</div>
+					<div class="pro_size">
+						尺寸：<strong>未选择</strong>
+						<ul>
+							<li><span>S</span></li>
+							<li><span>L</span></li>
+							<li><span>SL</span></li>
+							<li><span>LL</span></li>
+						</ul>
+					</div>
+					<div class="pro_num">
+						数量：
+						<select id="num_sort" style="width:40px;">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+					<div class="pro_price">
+						总计：<span>200</span>元
+					</div>
+					<div class="pro_rating">
+						给商品评分：
+						<ul class="rating nostar">
+							<li class="one">
+								<a href="#" title="1分">1</a>
+							</li>
+							<li class="two">
+								<a href="#" title="2分">2</a>
+							</li>
+							<li class="three">
+								<a href="#" title="3分">3</a>
+							</li>
+							<li class="four">
+								<a href="#" title="4分">4</a>
+							</li>
+							<li class="five">
+								<a href="#" title="5分">5</a>
+							</li>
+						</ul>
+					</div>
+					<div id="cart">
+						<a href="#"><img src="images/btn_cart.png" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="tab">
+					<div class="tab_menu">
+						<ul class="clearfix">
+							<li class="selected">描述</li>
+							<li>属性</li>
+							<li>尺码表</li>
+							<li>介绍</li>
+						</ul>
+					</div>
+					<div class="tab_box">
+						<div>沿用风靡百年的经典全棉牛津纺面料，通过领先的液氨整理技术，使面料的抗皱性能更上一层。延续简约、舒适、健康设计理念，特推出免烫、易打理的精细免烫牛津纺长袖衬衫系列。 
+						</div>
+						<div class="hide">
+						来自新疆无污染的生态棉花，采用紧密纺精梳棉纱，单经双纬的织造组织，造就了颗粒饱满、朴实无华、温润细腻的经典牛津纺，易洗快干、手感丰软、吸湿性好。设计师遵循布料完美肌理，立体剪裁，以直筒明门襟的经典造型、配合圆袋、曲摆的现代人性化裁减，相得益彰，浑然天成。色彩明快的纯色衬衫简洁、自然、为您营造出利落、爽朗的形象，透出热情、优雅的个性；精选白、蓝、淡粉、宽条纹、英国格等10余种明亮、经典花型，色彩缤纷呈现，以适合本季着装，更显自然、舒适境界。
+	                    </div>
+	                    <div class="hide">
+						     S L SL LL
+						</div>
+						<div class="hide">
+						世界权威德国科德宝的衬和英国高士缝纫线使成衣领型自然舒展、永不变形，缝线部位平服工整、牢固耐磨；人性化的4片式后背打褶结构设计提供更舒适的活动空间；领尖扣的领型设计戴或不戴领带风格炯同、瞬间呈现；醇正天然设计，只为彰显自然荣耀。
+						</div>
+						
+					</div>
+			    </div>
+			    <!--hot start-->
+			    <div class="hot">
+							<div class="fullSlide">
+								<div class="bd">
+									<ul>
+										<li _src="url(images/index_06.png), url(images/index_06.png)" style="background: center 0 no-repeat;"><a href="detail.html"></a></li>
+										<li _src="url(images/index_06.png)" style="background:# center 0 no-repeat;"><a href="detail.html"></a></li>
+									</ul>
+								</div>
+								<div class="hd"><ul></ul></div>
+				           </div>
+				        <script type="text/javascript">
+							$(".fullSlide").hover(function(){
+							    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+							},
+							function(){
+							    $(this).find(".prev,.next").fadeOut()
+							});
+							$(".fullSlide").slide({
+							    titCell: ".hd ul",
+							    mainCell: ".bd ul",
+							    effect: "fold",
+							    autoPlay: true,
+							    autoPage: true,
+							    trigger: "click",
+							    startFun: function(i) {
+							        var curLi = jQuery(".fullSlide .bd li").eq(i);
+							        if ( !! curLi.attr("_src")) {
+							            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+							        }
+							    }
+							});
+				        </script>
+                	</div>
+                	<!--hot end-->
+		</div>
+		<!--content end-->
+		<!--footer start-->
+		<div class="footer_bg">
+			<footer>
+				<ul class="clearfix class">
+					<li>
+						<span>部门</span>
+						<a href="#">女士</a>
+						<a href="#">男士</a>	
+						<a href="#">儿童</a>
+					    <a href="#">家居</a>
+					</li>
+					<li>
+						<span>公司信息</span>
+						<a href="#">在jane的职业发展</a>
+						<a href="#">关于jane集团</a>	
+						<a href="#">我们的职责</a>
+					    <a href="#">媒体</a>
+					    <a href="#">投资者关系</a>
+					    <a href="#">Corporate governance</a>
+					</li>
+					<li>
+						<span>帮助</span>
+						<a href="#">客户服务</a>
+						<a href="#">我的jane</a>	
+						<a href="#">jane门店信息</a>
+					    <a href="#">隐私一级法律条款</a>
+					    <a href="#">联系我们</a>
+					</li>
+					<li>
+						<span>订阅通讯</span>
+						<p>立即注册，获得85优惠</p>
+					    <a href="#">注册</a>
+					</li>
+				</ul>
+				<ul class="clearfix pic">
+					<li><a href="#"><img src="images/index_07.gif"/></a></li>
+					<li><a href="#"><img src="images/index_08.png"/></a></li>
+				</ul>
+				<p>jane的经营理念：以可持续的方式和优惠的价格提供时尚与品质。自从1947年成立以来，jane已成长为一家世界领 <br />先的时尚公司。先的时尚公司</p>
+				<p>京ICP备09046754  北京工商</p>
+				<p>jane  shopping</p>
+				<p>Change Country|¥</p>
+			</footer>
+		</div>
+		<!--footer end-->
+	</body>
+</html>
